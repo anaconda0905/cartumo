@@ -1,0 +1,104 @@
+// frontend global
+@import "partials/top-sidebar";
+@import "partials/left-cpanel";
+@import "partials/right-sidebar";
+@import "partials/bottom-sidebar";
+@import "partials/middle-main-container";
+@import "partials/inner";
+@import "widgets";
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+#cm-builder {
+  margin-top: 32px;
+
+  .cmb-btn-add-new {
+
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    border: 2px dashed #969fa6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+    outline: 0;
+    z-index: 1;
+  }
+
+  .cmb-add-new-section {
+
+    padding: 20px 0;
+    margin: 20px 0;
+    // border: 1px solid blue;
+  }
+
+  .cm-builder-inner {
+
+    .cm-section-wrapper {
+
+      //min-height: 200px;
+      //width: 100%;
+      //position: relative;
+      //border: 1px solid #f1f1f1;
+
+      min-height: 100%;
+      border: 1px solid #0f0;
+    }
+  }
+}
+
+.box-drag {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #F1F1F1;
+}
+
+.drag-over {
+  border: 2px dashed #000 !important;
+}
+
+.dragging {
+
+  opacity: .80;
+  // border: 2px solid red !important;
+}
+
+.cmb-sortable-placeholder {
+
+  // border: 1px solid lightgreen;
+  width: 100%;
+  min-height: 50px;
+
+  &.placeholder-before {
+    border: 1px solid lightgreen;
+  }
+  &.placeholder-after {
+    border: 1px solid lightblue;
+  }
+}
+
+.cmb-widget-container-box {
+
+  padding: 20px 0;
+  // border: 1px solid red;
+}
+.cmb-sortable-placeholder {
+
+  padding: 20px 0;
+  // border: 1px solid blue;
+}
+
+
+.on_hover {
+  outline: 1px solid #1da5e5;
+}

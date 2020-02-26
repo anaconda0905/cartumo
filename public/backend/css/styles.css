@@ -1,0 +1,15 @@
+a {
+    color: #fff;
+  }
+  
+  .navbar-default {
+      background-color: #545454;
+      border-color: #fff;
+  }
+  .navbar-default .navbar-brand {
+    color: #fff;
+  }
+  .sidebar ul li a.active {
+    background-color: #a5c2dc;
+  }
+  

@@ -1,0 +1,55 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  /*border: 1px solid red;*/
+}
+
+html {
+  background: transparent;
+  color: #2f2f2f;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background-color: transparent;
+  font-size: 14px;
+  /*line-height: 1.42857143;*/
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Nunito !important
+}
+
+a {
+  &:focus {
+    color: inherit;
+  }
+  &:hover {
+    color: inherit;
+  }
+}
+
+
+b,
+strong {
+  font-weight: 700;
+}
+
+table {
+  text-align: left;
+}
+
+p,
+table {
+  font-size: 17px;
+  font-family: inherit;
+}
+
+p {
+  line-height: 22px;
+  margin: 0px;
+}

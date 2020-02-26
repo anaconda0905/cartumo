@@ -1,0 +1,35 @@
+#panel-left-sidebar {
+
+  #cmb-option-panel {
+
+    display: none !important;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    position: fixed;
+    width: 268px;
+    background-color: #f0f3f3;
+    -webkit-box-shadow: 0 0 5px 0 rgba(25,31,40,0.2);
+    box-shadow: 0 0 5px 0 rgba(25,31,40,0.2);
+    z-index: 10;
+    top: 30px;
+    left: 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-transition: left 0.2s ease-out,right 0.2s ease-out;
+    -o-transition: left 0.2s ease-out,right 0.2s ease-out;
+    transition: left 0.2s ease-out,right 0.2s ease-out;
+    overflow: auto;
+
+    &.active {
+      display: block !important;
+    }
+  }
+}

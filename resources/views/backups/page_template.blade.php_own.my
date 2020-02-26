@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en"
+      class="bgCover wf-proximanova-i4-active wf-proximanova-i7-active wf-proximanova-n4-active wf-proximanova-n7-active wf-active wf-proximanova-i3-active wf-proximanova-n3-active wf-proximanovasoft-n4-active wf-proximanovasoft-n7-active gr__app_clickfunnels_com "
+      style="overflow: initial; color: rgb(93, 100, 120); font-family: Monda, Helvetica, sans-serif !important; background-color: rgb(236, 238, 244);">
+<head data-user="895370" data-lander-id="12375007">
+    <link rel="icon" id="favicon-image" href="/images/favicon.ico" type="image/png">
+    <meta charset="UTF-8">
+
+    <title>Free Offer Just Pay Shipping and Handling</title>
+    <meta class="metaTagTop" name="description" content="">
+    <meta class="metaTagTop" name="keywords" content="">
+    <meta class="metaTagTop" name="author" content="">
+    <meta class="metaTagTop" property="og:image" content="" id="social-image">
+
+    <script>
+        // all editor apps visible to user
+        var $ALL_EDITOR_APPS = [];
+        // all enabled editor app
+        var $ENABLED_EDITOR_APPS = [];
+    </script>
+
+    <link rel="stylesheet" media="screen" href="{{ asset('editor/css/lander_elements.css') }}"/>
+
+    <link rel="stylesheet" media="screen" href="{{ asset('editor/css/editor.css') }}"/>
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+
+    <meta name="csrf-param" content="authenticity_token"/>
+    <meta name="csrf-token"
+          content="iuAUMjBufImISvqu9YFqXiAZDXhoe6KfuDO6h/YFsHVB1I0RCTu+FG4+WcMiEoKEH8V47e5u1fikKVJjNphgJg=="/>
+
+    <style>
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s
+        }
+
+        .sidenav a:hover, .offcanvas a:focus {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    </style>
+
+
+</head>
+    <body>
+
+    <input type="hidden" name="hid_base_url" id="hid_base_url" value="{{ URL::to('/') }}" />
+
+    <div class="editorHelpTopBar editorHelpTopBarSmaller clearfix" style="top: 0px;">
+
+        <!-- LEFT -->
+        <div class="editorHelpTopBarLefter pull-left">
+
+            <div class="toggleEditor toggleEditorControl toggleCFEditorSettings left-tip pull-left" style="height:62px;"
+                 data-editor="editorsettings" data-id="splitTestControl">
+                <img src="https://styles.clickfunnels.com/images/header-logo.png"
+                     style="width: 42px; padding-bottom: 10px; padding-top: 6px;">
+            </div>
+
+            <!-- desktop / mobile -->
+            <div class="editorTopNavGroup pull-left clearfix">
+
+                <div class="editorTopNavItem editorTopNavItemToolTip editorTopNavItemIconOnly pull-left" data-editor="close"
+                     data-id="sidebarElements" data-tips="go to dashboard"
+                     url="https://app.clickfunnels.com/funnels/3602605/steps/16389724/overview" data-title="exit">
+                    <i class="fa fa-reply"></i>
+                </div>
+
+            </div>
+
+            <!-- desktop / mobile -->
+            <div class="editorTopNavGroup editorTopNavGroup_responsive_toggler pull-left clearfix">
+
+                <div class="editorTopNavItem editorTopNavItemToolTip editorTopNavItemMobileActive mobileTester editorTopNavItemIconOnly pull-left"
+                     data-editor="desktop" data-title="desktop">
+                    <i class="fa fa-desktop"></i>
+                </div>
+
+                <div class="editorTopNavItemDivider pull-left"></div>
+
+                <div class="editorTopNavItem editorTopNavItemToolTip editorTopNavItemIconOnly mobileTester pull-left"
+                     data-editor="mobile" data-title="mobile">
+                    <i class="fa fa-mobile"></i>
+                </div>
+
+            </div>
+
+            <!-- SAVE / PREVIEW -->
+            <div class="editorTopNavGroup  membershipHider pull-left clearfix">
+
+                <!-- <div class="editorTopNavItem editorTopNavItemToolTip editorTopNavItemIconOnly pull-left" data-editor="docs" data-title="docs">
+                    <i class="fa fa-book"></i>
+                </div> -->
+
+                <!-- <div class="editorTopNavItemDivider pull-left"></div> -->
+
+                <div class="editorTopNavItem editorTopNavItemToolTip editorTopNavItemIconOnly pull-left"
+                     data-editor="appstore" data-title="apps">
+                    <i class="fa fa-plug"></i>
+                </div>
+
+                <div class="editorTopNavItemDivider pull-left"></div>
+
+                <div class="editorTopNavItemX membershipHider  editorTopNavItemShowSub pull-left"
+                     id="editorTopNav_settings">
+                    <i class="fa fa-cogs"></i>
+                    <span>settings</span>
+
+                    <div class="editorTopNavSecondary">
+
+                        <div class="editorTopNavItem pull-left emailIntegrationMenu" data-editor="email">
+                            <i class="fa fa-envelope"></i>
+                            Integrations
+                        </div>
+
+                        <div class="editorTopNavItem pull-left" data-editor="meta">
+                            <i class="fa fa-globe"></i>
+                            SEO Meta
+                        </div>
+
+
+                        <div class="editorTopNavItem pull-left" data-editor="tracking">
+                            <i class="fa fa-bar-chart"></i>
+                            Tracking Code
+                        </div>
+
+                        <div class="editorTopNavItem pull-left" data-editor="css">
+                            <i class="fa fa-code"></i>
+                            Custom CSS
+                        </div>
+
+                        <!-- TODO : Remove this!!! -->
+                        <div class="editorTopNavItem pull-left" data-editor="session-recovery">
+                            <i class="fa fa-code"></i>
+                            Session Recovery
+                        </div>
+
+                        <div class="editorTopNavItem pull-left" data-editor="styles">
+                            <i class="fa fa-paint-brush"></i>
+                            Background
+                        </div>
+
+                        <div class="editorTopNavItem pull-left" data-editor="font-styles">
+                            <i class="fa fa-font"></i>
+                            Typography
+                        </div>
+
+                        <div class="editorTopNavItem pull-left" data-editor="settings">
+                            <i class="fa fa-cog"></i>
+                            General
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="editorTopNavItemDivider pull-left"></div>
+
+                <div class="editorTopNavItemX membershipHider editorTopNavItemShowSub pull-left">
+                    <i class="fa fa-external-link"></i>
+                    <span>pop up</span>
+
+                    <div class="editorTopNavSecondary">
+
+                        <div class="editorTopNavItem pull-left" data-editor="popup">
+                            <i class="fa fa-eye"></i>
+                            Show Pop up
+                        </div>
+
+                        <div class="editorTopNavItem pull-left" data-editor="popup_edit">
+                            <i class="fa fa-edit"></i>
+                            Edit Pop up
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- variant A -->
+            <!-- <div class="sideBarDividorElement pull-left"></div> -->
+
+            <!-- <div class="editorHelpPageText pull-left" style="cursor: default;">
+                <span class="editorHelpPageName">Sales Page</span>
+                <span class="editorHelpPageURL">
+                    <span>Sales</span> -
+                    <a id="previewURL2" class="truncate" target="_blank" href="http://inubaan.clickfunnels.com/pages/tenuvdbe9btvmy7b/preview?cachebuster=1489734860">
+                        https://inubaan.clickfunnels.com/sales-page12375007
+    </a>
+                </span>
+            </div> -->
+
+            <!-- <div class="editorHelperVariation pull-left">
+                <div class="editorHelperVariationContainer clearfix" >
+                    <div class="editorHelperVariationItem">A</div>
+                    <div class="editorHelperVariationItem">B</div>
+                    <div class="editorHelperVariationItem">C</div>
+                </div>
+            </div> -->
+
+
+        </div>
+
+
+        <!-- RIGHT -->
+        <div class="editorHelpTopBarLefter pull-right clearfix">
+
+            <!-- Content -->
+            <div class="editorTopNavGroup pull-left clearfix">
+
+                <div class="editorTopNavItemX editorTopNavItemShowSub pull-left" data-editor="sections">
+                    <i class="fa fa-cube"></i>
+                    <span>sections</span>
+
+                    <div class="editorTopNavSecondary">
+
+                        <div class="editorTopNavItem pull-left" data-editor="sections">
+                            <i class="fa fa-plus"></i>
+                            Add Section
+                        </div>
+
+                        <!-- <div class="editorTopNavItem pull-left" data-editor="meta">
+                            <i class="fa fa-cloud"></i>
+                            - Header
+                        </div>
+
+                        <div class="editorTopNavItem pull-left" data-editor="meta">
+                            <i class="fa fa-pointer"></i>
+                            - CTA
+                        </div>
+
+                        <div class="editorTopNavItem pull-left" data-editor="meta">
+                            <i class="fa fa-cloud"></i>
+                            - Footer
+                        </div>
+
+                        <div class="editorTopNavItem pull-left" data-editor="meta">
+                            <i class="fa fa-cloud"></i>
+                            - Personal
+                        </div> -->
+
+                        <div class="editorTopNavItem pull-left" data-editor="sections_all">
+                            <i class="fa fa-bars"></i>
+                            All Sections
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="editorTopNavItemDivider pull-left"></div>
+
+                <div class="editorTopNavItemX editorTopNavItemShowSub pull-left" data-editor="rows">
+                    <i class="fa fa-bars"></i>
+                    <span>rows</span>
+
+                    <div class="editorTopNavSecondary">
+
+                        <div class="editorTopNavItem pull-left" data-editor="rows">
+                            <i class="fa fa-plus"></i>
+                            Add Row
+                        </div>
+
+                        <!-- <div class="editorTopNavItem pull-left" data-editor="meta">
+                            <i class="fa fa-header"></i>
+                            - Headline
+                        </div>
+
+                        <div class="editorTopNavItem pull-left" data-editor="meta">
+                            <i class="fa fa-list"></i>
+                            - Feature
+                        </div>
+
+                        <div class="editorTopNavItem pull-left" data-editor="meta">
+                            <i class="fa fa-quote"></i>
+                            - Testimonial
+                        </div>
+
+                        <div class="editorTopNavItem pull-left" data-editor="meta">
+                            <i class="fa fa-cloud"></i>
+                            - Personal
+                        </div> -->
+
+                        <div class="editorTopNavItem pull-left" data-editor="rows_all">
+                            <i class="fa fa-bars"></i>
+                            All Rows
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="editorTopNavItemDivider pull-left"></div>
+
+                <div class="editorTopNavItem pull-left" data-title="edit columns" data-editor="columns">
+                    <i class="fa fa-columns"></i>
+                    <span>columns</span>
+                </div>
+
+                <div class="editorTopNavItemDivider pull-left"></div>
+
+                <div class="editorTopNavItemX editorTopNavItemShowSub pull-left" data-editor="elements">
+                    <i class="fa fa-plug"></i>
+                    <span>elements</span>
+
+                    <div class="editorTopNavSecondary">
+
+                        <div class="editorTopNavItem pull-left" data-editor="elements">
+                            <i class="fa fa-plus"></i>
+                            Add Element
+                        </div>
+
+                        <div class="editorTopNavItem pull-left" data-editor="elements_all">
+                            <i class="fa fa-bars"></i>
+                            All Elements
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- SAVE / PREVIEW -->
+            <div class="editorTopNavGroup pull-left clearfix">
+
+                <a data-editor="preview" data-title="open" class="editorTopNavItem membershipHider pull-left"
+                   id="previewURL" target="_blank"
+                   href="http://inubaan.clickfunnels.com/pages/tenuvdbe9btvmy7b/preview?cachebuster=1489734860">
+                    <i class="fa fa-eye"></i>
+                    <span>preview</span>
+
+                    <!-- <div class="editorTopNavSecondary" >
+
+                        <div class="editorTopNavItem pull-left" data-editor="email">
+                            <i class="fa fa-desktop"></i>
+                            Desktop
+                        </div>
+
+                        <div class="editorTopNavItem pull-left" data-editor="meta">
+                            <i class="fa fa-mobile"></i>
+                            Mobile
+                        </div>
+
+                    </div> -->
+
+                </a>
+                <div class="editorTopNavItemDivider pull-left"></div>
+
+                <div class="editorTopNavItem toggleSave pull-left" data-title="save page" data-editor="save"><i
+                            class="fa fa-save"></i> save
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="container">
+
+        <section id="editor_builder" style="padding-top: 100px;">
+
+        </section>
+
+    </div>
+
+
+
+
+
+
+    <div id="mySidenav" class="sidenav">
+        <div class="draggableElementsGroup draggableRowsGroup clearfix" data-notice-id="blank_rows" style="display: block;">
+
+            <div class="draggableAddItem de-row-drag pull-left ui-draggable" data-template="tmp_1column">
+                <div class="draggableAddItem_icon">
+                    <i class="fa fa-columns"></i>
+                    <i class="fa fa-1-number stackedDAIcon"></i>
+                </div>
+                <div class="draggableAddItem_label">1 column</div>
+                <a href="https://www.youtube.com/watch?v=j-Tjxd8QNmQ" class="dHV tutorialvideo"><i class="fa fa-question"></i></a>
+            </div>
+
+            <div class="draggableAddItem de-row-drag pull-left ui-draggable" data-template="tmp_2column">
+                <div class="draggableAddItem_icon">
+                    <i class="fa fa-columns"></i>
+                    <i class="fa fa-2-number stackedDAIcon"></i>
+                </div>
+                <div class="draggableAddItem_label">2 columns</div>
+                <a href="https://www.youtube.com/watch?v=j-Tjxd8QNmQ" class="dHV tutorialvideo"><i class="fa fa-question"></i></a>
+            </div>
+
+            <div class="draggableAddItem de-row-drag pull-left ui-draggable" data-template="tmp_3column">
+                <div class="draggableAddItem_icon">
+                    <i class="fa fa-columns"></i>
+                    <i class="fa fa-3-number stackedDAIcon"></i>
+                </div>
+                <div class="draggableAddItem_label">3 columns</div>
+                <a href="https://www.youtube.com/watch?v=j-Tjxd8QNmQ" class="dHV tutorialvideo"><i class="fa fa-question"></i></a>
+            </div>
+
+            <div class="draggableAddItem de-row-drag pull-left ui-draggable" data-template="tmp_4column">
+                <div class="draggableAddItem_icon">
+                    <i class="fa fa-columns"></i>
+                    <i class="fa fa-4-number stackedDAIcon"></i>
+                </div>
+                <div class="draggableAddItem_label">4 columns</div>
+                <a href="https://www.youtube.com/watch?v=j-Tjxd8QNmQ" class="dHV tutorialvideo"><i class="fa fa-question"></i></a>
+            </div>
+
+
+            <div class="draggableAddItem de-row-drag pull-left ui-draggable" data-template="tmp_5column">
+                <div class="draggableAddItem_icon">
+                    <i class="fa fa-columns"></i>
+                    <i class="fa fa-5-number stackedDAIcon"></i>
+                </div>
+                <div class="draggableAddItem_label">5 columns</div>
+                <a href="https://www.youtube.com/watch?v=j-Tjxd8QNmQ" class="dHV tutorialvideo"><i class="fa fa-question"></i></a>
+            </div>
+
+            <div class="draggableAddItem de-row-drag pull-left ui-draggable" data-template="tmp_6column">
+                <div class="draggableAddItem_icon">
+                    <i class="fa fa-columns"></i>
+                    <i class="fa fa-6-number stackedDAIcon"></i>
+                </div>
+                <div class="draggableAddItem_label">6 columns</div>
+                <a href="https://www.youtube.com/watch?v=j-Tjxd8QNmQ" class="dHV tutorialvideo"><i class="fa fa-question"></i></a>
+            </div>
+
+            <div class="draggableAddItem de-row-drag pull-left ui-draggable" data-template="tmp_12column">
+                <div class="draggableAddItem_icon">
+                    <i class="fa fa-columns"></i>
+                    <i class="fa fa-caret-left stackedDAIcon"></i>
+                </div>
+                <div class="draggableAddItem_label">left sidebar</div>
+                <a href="https://www.youtube.com/watch?v=j-Tjxd8QNmQ" class="dHV tutorialvideo"><i class="fa fa-question"></i></a>
+            </div>
+
+            <div class="draggableAddItem de-row-drag pull-left ui-draggable" data-template="tmp_21column">
+                <div class="draggableAddItem_icon">
+                    <i class="fa fa-columns"></i>
+                    <i class="fa fa-caret-right stackedDAIcon"></i>
+                </div>
+                <div class="draggableAddItem_label">right sidebar</div>
+                <a href="https://www.youtube.com/watch?v=j-Tjxd8QNmQ" class="dHV tutorialvideo"><i class="fa fa-question"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="{{ asset('editor/js/custom.js') }}"></script>
+
+    </body>
+</html>

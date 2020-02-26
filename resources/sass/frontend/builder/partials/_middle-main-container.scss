@@ -1,0 +1,39 @@
+#middle-main-container {
+
+
+
+  margin-right: 32px;
+
+  .cw-100 {
+
+    width: 100%;
+  }
+
+  .cw-100 {
+
+    width: 100%;
+  }
+
+  .on-hover {
+
+    outline: 2px solid #71d7f7;
+    -webkit-animation: section-outline .75s;
+    animation: section-outline .75s;
+
+    &.cmb-sections {
+
+      outline: 2px solid #2ECC71;
+    }
+
+    &.cmb-row {
+
+      outline: 2px solid #3498DB;
+    }
+
+    &.cmb-element {
+
+      outline: 2px solid #F39C12;
+      outline-color: #F39C12;
+    }
+  }
+}

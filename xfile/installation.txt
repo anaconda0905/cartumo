@@ -1,0 +1,30 @@
+Install Laravel Collective
+----------------------
+composer require laravelcollective/html
+
+
+Image Helper
+----------------------------
+composer require intervention/image
+
+
+CASHIRE:
+-------------------------
+composer require laravel/cashier
+
+
+
+Model Folder Change
+--------------------
+"autoload": {
+    "classmap": [
+        "database",
+        "app/Models"
+    ]
+}
+you just need to namespace the models accordingly.
+
+namespace App\Models\User
+and wherever you may need to use them just reference them with the correct namespace.
+
+use App\Models\User

@@ -1,0 +1,232 @@
+/*-----------------------------------------------------------------------------------
+Template Name: aSaas HTML5 Template,
+Template URI: http://www.themectg.com
+Description: This is html5 template
+Author: Themectg
+Author URI: http://www.themectg.com
+Version: 1.0
+-----------------------------------------------------------------------------------
+CSS INDEX
+===================
+1. Google font
+2. Theme Default CSS
+3. Helper-Class
+4. Headser-Area
+5. Sponsor-Area
+-----------------------------------------------------------------------------------*/
+
+/*-----------------
+1. Google font
+------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700,900');
+
+/*-------------------
+2. Theme Default CSS
+--------------------*/
+button,
+a {
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    color: #333333;
+}
+
+input[type="submit"]:focus,
+button:focus,
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: none;
+    color: #0297f3;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    line-height: 1.3em;
+    font-weight: 500;
+    color: #1c223a;
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2em;
+    color: #686b75;
+}
+
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+/*-- 3. Helper-Class --*/
+
+.heading-2 {
+    font-size: 48px;
+}
+
+.heading-3 {
+    font-size: 38px;
+}
+
+.heading-4 {
+    font-size: 28px;
+}
+
+.text-white a,
+.text-white {
+    color: #ffffff;
+}
+
+.text-green a,
+.text-green {
+    color: #1cc9bd;
+}
+
+.text-blue a,
+.text-blue {
+    color: #1992ec;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.middle-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.padding-left-50 {
+    padding-left: 50px;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.section-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-size: auto 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.section-padding-top {
+    padding-top: 120px;
+    background-size: auto 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.section-padding-bottom {
+    padding-bottom: 120px;
+    background-size: auto 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+
+/* ================================================================================================================ */
+
+
+
+.modal-header, .modal-body, .modal-footer{
+    padding: 25px;
+}
+.modal-footer{
+    text-align: center;
+}
+#signup-modal-content, #forgot-password-modal-content{
+    display: none;
+}
+
+/** validation */
+
+input.parsley-error{
+    border-color:#843534;
+    box-shadow: none;
+}
+input.parsley-error:focus{
+    border-color:#843534;
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #ce8483
+}
+.parsley-errors-list.filled {
+    opacity: 1;
+    color: #a94442;
+    display: none;
+}
+#login-signup-modal {
+    z-index: 99999 !important;
+}
+
+#__lpform_password_numspan {
+    display: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-area {
+        padding-top: 100px;
+    }
+    .js .slicknav_menu {
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+    }
+    .slicknav_menu > a {
+        display: table-cell;
+    }
+    .slicknav_menu > a:nth-child(2) {
+        text-align: right;
+        /*background-color: #10d596;*/
+        color: #ffffff;
+        border-radius: 3px;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        width: 32%;
+    }
+    .slicknav_menu > a:nth-child(2):hover {
+        color: #10d596;
+    }
+    .slicknav_menu > a:nth-child(3) {
+        width: 16%;
+    }
+    .slicknav_menu > a:first-child {
+        width: 35%;
+    }
+    .slicknav_menu .slicknav_btn {
+        display: table-cell;
+    }
+}

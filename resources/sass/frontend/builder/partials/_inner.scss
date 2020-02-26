@@ -1,0 +1,85 @@
+#cmb-inner-actions {
+
+  .hover-cmb-sections {
+    .cmb-icons-right {
+      div {
+        background: #2ECC71 !important;
+      }
+    }
+  }
+
+  .hover-cmb-row {
+    .cmb-icons-right {
+      div {
+        background: #3498DB !important;
+      }
+    }
+  }
+
+  .hover-cmb-element {
+    .cmb-icons-right {
+      div {
+        background: #F39C12 !important;
+      }
+    }
+  }
+
+  #edit-icons {
+
+    // display: none;
+    color: #fff;
+    position: absolute;
+    top: -1000px;
+    height: 0;
+    z-index: 100001;
+
+    .cmb-icons-right {
+
+      float: right;
+      color: #000;
+      display: flex;
+
+      div {
+
+        padding: 2px 7px;
+        background: transparent;
+      }
+    }
+  }
+
+  #edit-icons-active {
+
+    // display: none;
+    color: #fff;
+    position: absolute;
+    top: -1000px;
+    height: 0;
+    z-index: 100001;
+
+    .cmb-icons-right {
+
+      float: right;
+      color: #000;
+      display: flex;
+
+      div {
+
+        padding: 2px 7px;
+        background: green;
+      }
+    }
+  }
+
+  .cmb-controls {
+
+    div {
+
+      cursor: pointer;
+
+      &:hover {
+
+        color: $white;
+      }
+    }
+  }
+}
