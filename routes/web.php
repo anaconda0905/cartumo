@@ -311,11 +311,9 @@ Route::group(['middleware' => 'ssl'], function () {
     Route::get('/', 'HomeController@index')->name('index');
 
     Auth::routes();
-
-
-
     // --------------------------------------------------- Admin -------------------------------------------------------
     Route::prefix('admin')->group(function () {
+
         //Route::get('/', 'admin\AdminLoginController@index');
         //Route::post('/', 'admin\AdminLoginController@login')->name('admin');
 
