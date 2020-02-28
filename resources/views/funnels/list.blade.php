@@ -443,7 +443,7 @@
 
                             <div class="new-funnel-steps step-1">
                                 <div class="row clearfix">
-                                    <div class="col-md-6">
+                                    <div class="col-md-4">
                                         <div class="choose-step">
                                             <ul>
                                                 <li><img src="{{ asset('images/manual-product.png') }}"/></li>
@@ -455,13 +455,58 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-4">
                                         <div class="choose-step">
                                             <ul>
                                                 <li><img src="{{ asset('images/shopify-product.png') }}"/></li>
                                                 <li>Shopify Product Funnel</li>
                                             </ul>
                                             <p>Add products from Shopify using Cartumo funnel builder adding upsells downsells.</p>
+                                            <button type="button" class="btn special-button-primary"><i
+                                                        class="fa fa-plus" aria-hidden="true"></i> Choose
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    {{--fix#3--}}
+                                    <div class="col-md-4">
+                                        <div class="choose-step">
+                                            <ul>
+                                                <li><img src="{{ asset('images/lead.png') }}"/></li>
+                                                <li>Create a lead generate</li>
+                                            </ul>
+                                            <div style="margin-bottom: 30px;">
+                                                <table>
+                                                    <tr>
+                                                        <th style="font-size: 14px;">PLAN</th>
+                                                        <td>
+                                                            @if ( (!empty(Auth::user()->secret)) )
+                                                                @if ( Auth::user()->secret == env('REGISTER_CODE_MONTHLY') )
+                                                                    (${{ env('MONTHLY_PLAN') }} / MONTH)
+                                                                @elseif ( Auth::user()->secret == env('REGISTER_CODE_YEARLY') )
+                                                                    (${{ env('YEARLY_PLAN') }} / YEAR)
+                                                                @elseif ( Auth::user()->secret == env('REGISTER_CODE_LIFETIME_PROMO') )
+                                                                    <b style="color:#45b39c; text-transform: none">7 days free trial</b>
+                                                                @else
+                                                                    <b style="color:#45b39c; text-transform: none">Lifetime</b>
+                                                                @endif
+
+                                                            @endif
+                                                        </td>
+                                                        </th>
+                                                    </tr>
+
+
+                                                    <tr>
+                                                        <th style="font-size: 14px;">SALES</th>
+                                                        <td>${{ number_format($data['total_sales'], 2) }}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th style="font-size: 14px;">FUNNELS</th>
+                                                        <td>{{ $data['total_funnels'] }}</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
                                             <button type="button" class="btn special-button-primary"><i
                                                         class="fa fa-plus" aria-hidden="true"></i> Choose
                                             </button>

@@ -34,6 +34,7 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Add Funnel</h4>
+
                 </div>
                 <form method="post" action="{{ route('funnels.store') }}">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">

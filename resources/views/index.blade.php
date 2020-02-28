@@ -589,7 +589,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="single-team box_2 purple">
                         <figure class="team-photo">
                             <img src="{{ asset('images/jafar.jpg') }}" alt="">
@@ -609,7 +609,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="col-xs-12 col-sm-6 col-md-3" style="visibility: hidden">
                     <div class="single-team box_2 purple">
                         <figure class="team-photo">
                             <img src="{{ asset('images/sourav1.jpg') }}" alt="">
