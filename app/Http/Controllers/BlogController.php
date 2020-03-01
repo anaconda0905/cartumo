@@ -52,7 +52,4 @@ class BlogController extends Controller
 		return view('blog-detail', ['blog' => $blog, 'blogCategories' => $blogCategories ,'blogHasCategories' => $blogHasCategories]);
 	}
 
-	
-
-	
 }

@@ -386,12 +386,22 @@ class ProductsController extends Controller {
 	//Manual product list show ............. //
 	public function getBumpProductList( Request $request, $step_id ) {
 
+        $data 				= array();
+        $step				= FunnelStep::find( $step_id );
+
+        $data['type'] 		= $request->input( 'type' );
+        $data['funnel_id']  = $step['funnel_id'];
+        $data['step_id'] 	= $step['id'];
+        $data['products']   = get_products( $step->funnel_id, $request->input( 'keyword' ) );
+//        dd($data);
+        return view('product.bump-product-list', compact('data'));
+        /*
 		$data 				= array();
 		$data['type'] 		= $request->input( 'type' );
-		$funneProductlStep 	= get_funnel_step($step_id); // get the 'Product' step by default	
+		$funneProductlStep 	= get_funnel_step($step_id); // get the 'Product' step by default
 		$step				= FunnelStep::find( $step_id );
-		$stepProduct    	= StepProduct::where( 'step_id', $funneProductlStep->id )->first();	
-		
+		$stepProduct    	= StepProduct::where( 'step_id', $funneProductlStep->id )->first();
+        */
 
 		/*if ( $data['type'] == 'manual' ) {
 
@@ -455,7 +465,8 @@ class ProductsController extends Controller {
 
 		//print_r($data); die;
 
-		echo view( 'product.bump-product-list' )->withData( $data );
+
+//		echo view( 'product.bump-product-list' )->withData( $data );
 	}
 
 

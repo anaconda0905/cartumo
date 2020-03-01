@@ -154,6 +154,7 @@ Route::group(['middleware' => 'ssl'], function () {
         Route::post('order/{id}/tracking/add', 'OrderController@addTracking')->name('order.tracking.add');
 
         Route::post('funnels/{id}/steps/{step_id}/search', 'FunnelStepsController@searchProducts')->name('funnel.step.product.search');
+
         Route::post('funnels/{id}/steps/{step_id}/clone', 'FunnelStepsController@cloneStep')->name('funnel.step.clone');
         Route::post('funnels/{id}/steps/{step_id}/remove-template', 'FunnelStepsController@removeTemplate')->name('funnel.step.template.remove');
 
@@ -172,7 +173,7 @@ Route::group(['middleware' => 'ssl'], function () {
 
         Route::post('funnel/step/products/remove/{step_id}', 'ProductsController@removeStepProducts')->name('funnel.step.products.remove');
         Route::post('step/product/details', 'ProductsController@getStepProductDetails')->name('step.product.details');
-
+        //fix#4
         Route::get('funnels/{id}/steps/{step_id}/bump-product', 'ProductsController@productBump')->name('funnel.step.bump');
         Route::resource('funnels/{id}/steps/{step_id}/product', 'ProductsController');
         Route::get('funnels/{id}/steps/{step_id}/products/list', 'ProductsController@ajaxGetProductList')->name('products.list');

@@ -111,7 +111,7 @@
 
 
                                 @if ( $hasBump )
-                                    
+
                                     @foreach ( $stepProducts as $stepProduct )
 
                                         @include('funnels.products.partials.list-item')
@@ -119,21 +119,21 @@
                                     @endforeach
 
                                 @else
-                                <h2>Add a New Product to Funnel Step</h2>
+                                    <h2>Add a New Product to Funnel Step</h2>
                                     <p>Looks like you haven't added any products for this funnel step yet. Begin by
                                         selecting
                                         'Add a Product' below and set the price of your product inside of the settings
                                         popup.
                                         You can add as many products as you need for this funnel step.</p>
-                                <div class="col-md-12 text-right">
+                                    <div class="col-md-12 text-right">
                                         <span><button type="button" id="button_bump_product_manual"
-                                                    class="btn special-button-warning btn-lg"
-                                                    data-toggle="modal"
-                                                    data-target="#bumpProductModal">
+                                                      class="btn special-button-warning btn-lg"
+                                                      data-toggle="modal"
+                                                      data-target="#bumpProductModal">
                                                         <i class="fa fa-plus" aria-hidden="true"></i> Add Bump Product</button>
                                         </span>
-                                </div>
-                                @endif                               
+                                    </div>
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -144,8 +144,8 @@
     </div>
     </div>
 
-     <!-- Bump product -->
-     @if ( !$hasBump )
+    <!-- Bump product -->
+    @if ( !$hasBump )
         <div id="bumpProductModal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg">
                 <form id="frm_bump_product_settings" class="form-horizontal">
@@ -163,7 +163,9 @@
                                 <input type="search" id="search_product" name="search_product" placeholder="Enter a product name to search" class="form-control">
                             </div>
 
-                            <div id="bump_product_list"></div>
+                            <div id="bump_product_list">
+
+                            </div>
 
                         </div>
 
@@ -181,84 +183,85 @@
 
 
 @section('scripts')
-<script>
-    $(document).ready(function() {
+    <script>
+        $(document).ready(function() {
 
-        // search product
-        $(document).on("keyup keychange", "#search_product", function(e) {
+            // search product
+            $(document).on("keyup keychange", "#search_product", function(e) {
 
-            $.ajax({
-                type: 'POST',
-                url: "{{ route('funnel.step.product.search', array($funnel->id, $currentStep->id)) }}",
-                data: "_token={{ csrf_token() }}&type={{ $funnel->type }}&keyword=" + $(this).val(),
-                success: function (response) {
-                    console.log(response);
-                    $("#bump_product_list").html(response);
-                },
-                error: function (a, b) {
-                    console.log(a.responseText);
-                }
-            });
-        });
-
-        $("#button_bump_product_manual").click(function (e) {
-
-            $.ajax({
-                type: 'GET',
-                url: "{{ route('bump.product.list', array($currentStep->id)) }}",
-                data: "_token={{ csrf_token() }}&type={{ $funnel->type }}",
-                success: function (response) {
-                    console.log(response);
-                    $("#bump_product_list").html(response);
-                },
-                error: function (a, b) {
-                    console.log(a.responseText);
-                }
-            });
-        });
-
-        // create/update bump product
-        $(document).on("click", ".bump-choose-product", function (e) {
-
-            e.preventDefault();
-
-            const button = $(this);
-
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });
-            $.ajax({
-                type: 'POST',
-                url: "{{ route('product.store', [$funnel->id, $currentStep->id]) }}",
-                data: $("#frm_bump_product_settings").serialize() + '&product_id=' + $(button).attr('data-product-id') + '&type=bump&chk_bump_product=true'+ '&product_type=' + $(button).attr('data-product-type'),
-                beforeSend: function () {
-
-                    tmp = $(button).html();
-                    $(button).html('<i class="fa fa-circle-o-notch fa-spin"></i><span class="sr-only">Loading...</span>');
-                    //$("body").append("<iframe src='' id='iframe_updater' style='display: block'></iframe>");
-                },
-                success: function (response) {
-                    //alert(response);
-                    console.log(response);
-
-                    var json = JSON.parse(response);
-
-                    if (json.status == 'success') {
-                        // location.href = json.url;
-                        location.href = location.href;
-
-                    } else {
-                        alert(json.message);
+                $.ajax({
+                    type: 'POST',
+                    url: "{{ route('funnel.step.product.search', array($funnel->id, $currentStep->id)) }}",
+                    data: "_token={{ csrf_token() }}&type={{ $funnel->type }}&keyword=" + $(this).val(),
+                    success: function (response) {
+                        console.log(response);
+                        $("#bump_product_list").html(response);
+                    },
+                    error: function (a, b) {
+                        console.log(a.responseText);
                     }
+                });
+            });
 
-                },
-                error: function (a, b) {
-                    console.log(a.responseText);
-                }
+            $("#button_bump_product_manual").click(function (e) {
+
+                $.ajax({
+                    type: 'GET',
+                    url: "{{ route('bump.product.list', array($currentStep->id)) }}",
+                    data: "_token={{ csrf_token() }}&type={{ $funnel->type }}",
+                    success: function (response) {
+                        // window.alert("ok");
+                        // console.log(response);
+                        $("#bump_product_list").html(response);
+                    },
+                    error: function (a, b) {
+                        console.log(a.responseText);
+                    }
+                });
+            });
+
+            // create/update bump product
+            $(document).on("click", ".bump-choose-product", function (e) {
+
+                e.preventDefault();
+
+                const button = $(this);
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+                $.ajax({
+                    type: 'POST',
+                    url: "{{ route('product.store', [$funnel->id, $currentStep->id]) }}",
+                    data: $("#frm_bump_product_settings").serialize() + '&product_id=' + $(button).attr('data-product-id') + '&type=bump&chk_bump_product=true'+ '&product_type=' + $(button).attr('data-product-type'),
+                    beforeSend: function () {
+
+                        tmp = $(button).html();
+                        $(button).html('<i class="fa fa-circle-o-notch fa-spin"></i><span class="sr-only">Loading...</span>');
+                        //$("body").append("<iframe src='' id='iframe_updater' style='display: block'></iframe>");
+                    },
+                    success: function (response) {
+                        //alert(response);
+                        console.log(response);
+
+                        var json = JSON.parse(response);
+
+                        if (json.status == 'success') {
+                            // location.href = json.url;
+                            location.href = location.href;
+
+                        } else {
+                            alert(json.message);
+                        }
+
+                    },
+                    error: function (a, b) {
+                        console.log(a.responseText);
+                    }
+                });
             });
         });
-    });
-</script>
+    </script>
 @endsection

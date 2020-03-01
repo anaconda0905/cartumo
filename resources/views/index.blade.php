@@ -568,7 +568,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3" style="visibility: hidden">
+                <div class="col-xs-12 col-sm-6 col-md-4" style="visibility: hidden">
                     <div class="single-team box_2 purple">
                         <figure class="team-photo">
                             <img src="./aSaas _ HTML OnePage Template_files/team-1.png" alt="">
@@ -589,7 +589,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="col-xs-12 col-sm-3 col-md-4">
                     <div class="single-team box_2 purple">
                         <figure class="team-photo">
                             <img src="{{ asset('images/jafar.jpg') }}" alt="">
@@ -609,7 +609,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3" style="visibility: hidden">
+                <div class="col-xs-12 col-sm-6 col-md-4" style="visibility: hidden">
                     <div class="single-team box_2 purple">
                         <figure class="team-photo">
                             <img src="{{ asset('images/sourav1.jpg') }}" alt="">
@@ -629,27 +629,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3" style="visibility: hidden">
-                    <div class="single-team box_2 purple">
-                        <figure class="team-photo">
-                            <img src="./aSaas _ HTML OnePage Template_files/team-4.png" alt="">
-                        </figure>
-                        <div class="team-content">
-                            <h4 class="team-name" title="Jhon Doe">Jhon Doe</h4>
-                            <div class="team-position">Head of Idea</div>
-                            <div class="social">
-                                <a href="http://quomodosoft.com/html/asaas/asaas/index3.html#"><i
-                                            class="fa fa-facebook"></i></a>
-                                <a href="http://quomodosoft.com/html/asaas/asaas/index3.html#"><i
-                                            class="fa fa-twitter"></i></a>
-                                <a href="http://quomodosoft.com/html/asaas/asaas/index3.html#"><i
-                                            class="fa fa-google-plus"></i></a>
-                                <a href="http://quomodosoft.com/html/asaas/asaas/index3.html#"><i
-                                            class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
